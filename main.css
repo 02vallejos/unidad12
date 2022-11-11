@@ -1,0 +1,517 @@
+/* Pagina pensada para presentar proyectos de electronica aplicada
+donde el alumno podra mostrar trabajos practicos relizados para 
+la carrera de ingenieria en electronica y poder compartilo con la 
+comunidad de la univerciadad*/
+
+/* Estilo de las cajas pricipales*/
+header, section, footer {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Seccion configuracion del Header y sus elementos 
+logo= se posiona a la izquierda para colocar una imgen
+pad= consta de varias opciones que posicionan a la pagina
+login= seccion donde alternativa para el ingreso a la pagina*/
+#menu {
+    height: 90px;
+    background-color: grey;
+    background-image: url(image/Background_header.png) ;
+    
+}
+
+
+#logo, #pad, #login {
+    height: 72px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#logo { 
+    width: 200px;
+    float: left; 
+}
+
+#img_logo{
+    border-radius: 10px;
+}
+
+#pad { 
+    width: 450px;  
+    float: right; 
+    background-color: rgb(213, 216, 220);
+}
+
+#buttons{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button{
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.button a{
+    color: black;
+    text-decoration: none;
+    font-size: large;
+}
+
+.button:hover{
+    background: -webkit-gradient(linear, 0 65, 0 100%, from(rgb(213, 216, 220)), to(rgb(44, 44, 44)));
+}
+
+#login {
+    width: 90px;
+    float: right; 
+}
+
+#img_loging {
+    border-radius: 10px;
+}
+
+
+/* Seccion configuracion del Header y sus elementos
+sec_up= mostrará proyectos hechos en lenguage ensamblador para microcontroladores PIC
+sec_mid= mostrará proyectos hechos en leguage C para microcontroladores PIC
+sec_dw = mostrará proyectos de electronica en general de nivel aprendis ademas de poder
+despleglar un scroll que tendra enlaces del tipo drive para poder descargar codigo*/
+
+
+/* Estilos de Seccion Up*/
+#cards {
+    height: 650px;
+    background-color: rgb(246, 246, 246);
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center; 
+   
+}
+
+#cards img {
+    height: 173px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card h2{
+    margin: 0;
+    padding: 0;
+    background: -webkit-gradient(linear, 0 0, 0 90%, from(#53cf7c), to(#2c2c2c));
+    color: rgb(208, 255, 223);
+    text-align: center;
+    font-size:1.5em;
+}
+.card p {
+    height: 330px;
+    text-align: justify;
+    padding: 10px;
+    margin: 0;
+}
+.card{
+    height: 630px;
+    width: 300px;
+    background-color: rgb(170, 170, 173);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.card:hover{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+#cards a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background-color: rgb(213, 216, 220);
+    border-radius: 10px;
+    
+}
+
+
+
+
+/* Estilos de Seccion Mid*/
+#sec_mid {
+    height: 700px;
+    background-color: rgb(246, 246, 246);
+}
+
+#sec2_img1 {
+    height: 680px;
+    width: 940px;
+    background-color: rgb(52, 73, 94);
+    float: left;
+    margin: 10px;
+    
+}
+
+#sec2_container{
+    width: 100%;
+    height: 140px;
+    background-color: #ffffff;
+}
+
+#sec_mid p{
+    color: black;
+    text-decoration: none;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+#buttons_eje{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: hand;
+}
+
+.button_eje{
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    border-radius: 10px    
+}
+
+#pad_eje{
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    /*background-color: rgb(72, 131, 100);*/
+    background: -webkit-gradient(linear, 0 0, 0 90%, from(#ffffff), to(#2c2c2c));
+}
+
+.button_eje:hover{
+    color: red; 
+    cursor: pointer;
+}
+
+.sec2_cod_img{
+    width: 100%;
+    height: 470px;
+}
+
+#sec2_img_bsc, #sec2_img_c{
+    display: none;
+}
+
+
+/* Estilos de Seccion Down*/
+#sec_dw {
+    height: 660px;
+    background-color: rgb(246, 246, 246);
+}
+
+#container_form{
+    margin: 10px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+#sec3_img1, #sec3_img2 {
+    height: 640px;
+    width:460px;
+    float: left;
+    margin: 10px;
+    border-radius: 10px;
+}
+#sec3_img1{
+    background: rgb(9,9,121);
+    background: linear-gradient(41deg, rgba(9,9,121,0.9643207624846813) 69%, rgba(4,4,4,1) 100%);
+}
+
+#sec3_img2{
+    background-color: rgb(170, 170, 173);
+}
+
+#foto1 {
+        border-radius: 10px;
+        object-fit: cover;
+        width:100%;
+        height:100%;        
+}
+#foto2{
+    border-radius: 10px;
+    object-fit: cover;
+    width:100%;
+    height:100%;        
+}
+
+
+
+#sec_wk_h2{
+    color: black;
+    text-align: center;
+    font-size:1.5em;
+}
+
+
+
+/* Estilos de del pie de pagina donde tendra datos del alumno que es autor 
+de los trabajos presentados*/
+#sec_work, #sec_work_1 {
+   /* height: 1350px;*/
+   background-color: rgb(240, 240, 240);
+}
+
+
+/* Section Work Row 1 Image*/
+#row01_col01 {
+   
+    background-color: rgb(240, 240, 240);
+       /* background: rgb(9,9,121);
+        background: linear-gradient(41deg, rgba(9,9,121,0.9643207624846813) 69%, rgba(4,4,4,1) 100%);*/
+    
+}
+
+/* Section Work Row 2 Image*/
+#row02_col01 {
+    background-color: #a9ed3d;
+}
+
+#row02_col02 {
+    background-color:rgb(205, 132, 36)
+}
+
+/* Section Work Row 3 Image*/
+#row03_col01 {
+    background-color: rgb(240, 240, 240);
+}
+
+/* Estilos de del pie de pagina donde tendra datos del alumno que es autor 
+de los trabajos presentados*/
+#abt_us {
+    height: 100px;
+    background-color: rgb(41, 41, 41); 
+   
+}
+#abt_logo img {
+    height: 80px;
+    width: 400px;
+    border-radius: 10px;
+    margin: 10px;
+    float: left;
+}
+#abt_us a {
+    text-decoration: none;
+    float: right;
+    padding: 40px;
+    color: white;
+    font-family: Comic Sans MS;
+    font-size: large;
+}
+#abt_us a:hover{
+    font-size:larger;
+}
+
+
+/***************************************************************************/
+/***************************************************************************/
+/***************************************************************************/
+
+
+@media all and (min-width: 600px) and (max-width: 1023px) {
+
+
+header, section, footer {
+    width: 580px;
+  }
+  
+  #menu {
+      height: 175px;
+      background-repeat:no-repeat;
+      background-size: cover;
+  }
+  
+  #pad { 
+      width: 560px;
+      margin-bottom: 5px; 
+      margin-top: 5px;
+  }
+  
+  #login {
+    margin-top: 5px;
+  }
+
+  /* Estilos de Seccion Up*/
+  #cards {
+      height: 850px;
+
+  }
+ 
+ .card h2 {
+    height: 67px;
+ }
+
+  .card p {
+      height: 500px;
+  }
+
+  .card{
+      height: 830px;
+  }
+  
+  #sec2_img1 {
+      width: 560px;
+    }
+  
+  #logo, #login{
+    margin-bottom: 5px;
+  }
+  
+  
+  /* Estilos de Seccion Middle*/
+  #sec_dw {
+      height: 1000px;
+  }
+  
+  #sec3_img1, #sec3_img2 {
+    height: 480px;
+    width:560px;
+    float: left;
+    margin: 10px;
+    background-color: rgb(52, 73, 94);
+  }
+
+/* Estilos de Seccion Work*/
+  #container_form{
+    height: 380px;
+}
+  
+  /* Estilos de del pie de pagina donde tendra datos del alumno que es autor 
+  de los trabajos presentados*/
+  #abt_us a {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #abt_logo img {
+      width: 300px;
+  }
+
+
+}
+
+@media all and (min-width: 100px) and (max-width: 599px) {
+
+header, section, footer {
+    width: 360px;
+  }
+
+  #menu {
+    height: 165px;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+#logo{
+    margin: 5px;
+}
+
+  #pad { 
+    display: block;
+      width: 350px; 
+      margin: 5px;
+    
+  }
+   
+  .button a{
+    font-size: small;
+
+  }
+  #logo,#login {
+      display: inline-flex ;
+      margin: 5px;
+  }
+  
+
+  #cards {
+      height: 1560px;
+      display: block;
+ 
+  }
+ 
+  .card{
+      height: 510px;
+      width: 300px;
+      background-color: rgb(170, 170, 173);
+      margin: 10px;
+      border-radius: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0px;
+  }
+  
+  .card p {
+    height: 240px;
+}
+
+#sec_mid {
+    height: 720px;
+   
+}
+
+  #sec2_img1 {
+    width: 340px;  
+  }
+  
+  /* Estilos de Seccion Middle*/
+
+  #sec2_container{  
+    height: 160px;
+    border-bottom: 10px;
+    
+}
+
+.sec2_cod_img{
+    height: 440px;
+}
+
+ /* Estilos de Seccion Down*/
+  #sec_dw {
+      height: 1320px;
+  }
+  
+  #sec3_img1, #sec3_img2 {
+
+      width:340px;
+  }
+  
+  #abt_us {
+    height: 130px; 
+}
+
+  #abt_logo img {
+      height: 80px;
+      width: 340px;
+      border-radius: 10px;
+      margin: 10px;
+    
+  }
+  #abt_us a {
+     padding: 0px;
+    float: none;
+    display: inline;
+    margin-left: 100px;
+  }
+
+}
