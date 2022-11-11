@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Unidad 12</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- CSS Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+     <!-- JS Bootstrap-->
+    <script src='unidad7.js'></script>
+</head>
+<body>
+    <!--INICIO DE CUERPO DE DOM -->>
+    <header id="menu">
+        <div id="logo">
+            <img id="img_logo" src="image/Logo_Pagina.png">
+        </div>
+        <div id="login">
+            <img id="img_loging" src="image/login.png">
+        </div>
+        <nav id="pad">
+        <ul id="buttons">
+            <li class="button" ><a href="#cards">Proyectos</a></li>
+            <li class="button"><a href="#sec_mid">Assenbler</a></li>
+            <li class="button"><a href="#sec_dw">Codigos</a></li>
+            <li class="button"><a href="#sec_work">Imagenes</a></li>
+            <li class="button"><a href="#abt_us">Nosotros</a></li>
+        </ul>
+        </nav>
+        
+    </header>
+
+    <section id="cards">
+        <div id="card_1" class="card"> 
+                <img src="image/Sec_up_1.png">
+                <h2>USB Con PICs</h2>
+                <p> El termino bootloader hace referencia a un pequeño programa que se realiza 
+                    para determinado microcontrolador, ya sea PIC, Freescale, Atmel, etc. Este código 
+                    lo que hace es tomar los datos que se le enviaran por puerto serial (UART), USB, 
+                    Ethernet, el que sea que pueda enviar una cadena de Bytes al microcontrolador.
+                </p>
+                <a href="">Leer Mas</a>
+        </div>
+
+        <div id="card_2" class="card">
+                <img src="image/pic_ethernet.png">
+                <h2>Ethernet Con PICs</h2>
+                <p> La placa de desarrollo se basa en un microcontrolador PIC18LF4553. El microcontrolador tiene una interfaz 
+                    Full Speed USB 2.0 (12Mbit/s) sin necesidad de componentes externos. Además, tiene 32KB de memoria de programa, 
+                    2KB de RAM y soporta un reloj externo de hasta 48MHz.
+                </p>
+                <a href="">Leer Mas</a>
+        </div>  
+        </div>
+
+        <div id="card_3" class="card"> 
+                <img src="image/ejes.png">
+                <h2>Acelerómetro Con PICs</h2>
+                <p> El acelerómetro es uno de los sensores que se ha convertido en una necesidad en muchos de los dispositivos 
+                    tecnológicos actuales. Su función es la de encargarse de la orientación de la pantalla para la visualización 
+                    horizontal y vertical en el caso de los Smartphones.
+                </p>
+                <a href="">Leer Mas</a> 
+        </div>
+    </section>
+
+    <section id="sec_mid">
+        <div id="sec2_img1">
+            <div id="sec2_container">
+                <script>
+                document.write("<p>Su nombre: "+nombre+"</p>")
+                document.write("<p>Su edad: "+edad+"</p>")
+                document.write("<p>Ud es del pais: "+pais+"</p>")
+                document.write("<p>Ud es de la provincia: "+provincia+"</p>")
+                document.write("<p>A Ud "+gusto+" le gusta los microcontroladores</p>")
+               </script>
+            </div>           
+            <nav id="pad_eje">
+                <ul id="buttons_eje">
+                    <li id="eje_asm" class="button_eje">Codigo en Assembler</li>
+                    <li id="eje_basic" class="button_eje">Codigo en Basic</li>
+                    <li id="eje_c" class="button_eje">Codigo en C</li>
+                </ul>
+            </nav>
+            <img class="sec2_cod_img" id="sec2_img_asm" src="image/assembler-code.jpg">
+            <img class="sec2_cod_img" id="sec2_img_bsc" src="image/ejemplo_basic.png">
+            <img class="sec2_cod_img" id="sec2_img_c" src="image/ejemplo_c.png">
+        </div>
+    </section>
+    <section id="sec_dw">
+            <div id="sec3_img1">
+             <img src="image/sec3_2.jpg" id="foto1">
+            </div>
+            <div id="sec3_img2">
+                <img src="image/sec3_3.jpg" id="foto2">
+    
+            </div>
+    </section>
+        <section id="sec_work">
+            <div class="container-fluid px-4" id="sec_work_1">
+                <div class="row px-6" id="row01">
+                    <div class="col" id="row01_col01">
+                        <h2 id="sec_wk_h2">¿Quieres Recibir Codigos Ejemplos? !Avisanos¡</h2>
+                        
+                        <div id="container_form">
+                            <form class="row g-3">
+                                <div class="col-md-4">                          
+                                  <input type="text" class="form-control" id="validationDefault01" placeholder="Nombre" aria-label="Nombre" required>
+                                </div>
+                                <div class="col-md-4">                         
+                                  <input type="text" class="form-control" id="validationDefault02" placeholder="Apellido" aria-label="Apellido" required>
+                                </div>
+                                <div class="col-md-4">                         
+                                  <div class="input-group">
+                                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                                    <input type="text" class="form-control" id="validationDefaultUsername" placeholder="eMail" aria-label="eMail"  aria-describedby="inputGroupPrepend2" required>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">        
+                                  <input type="text" class="form-control" id="validationDefault03" placeholder="Edad" aria-label="Edad" required>
+                                </div>
+                                <div class="col-md-3">           
+                                  <select class="form-select" id="validationDefault04" required>
+                                    <option selected disabled value="">Tipo</option>
+                                    <option>Assembler</option>
+                                    <option>C</option>
+                                    <option>C++</option>
+                                    <option>Basic</option>
+                                  </select>
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                    <label class="form-check-label" for="invalidCheck2">
+                                      Quiero recibir noticias.
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <button class="btn btn-primary" type="submit">Enviar</button>
+                                </div>
+                              </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-6" id="row02">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="image/Carrucel_1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="image/Carrucel_2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="image/Carrucel_3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div> 
+                    <!--
+                    <div class="col-sm"id="row02_col02">
+                      
+
+                    </div>-->
+                </div>   
+                <div class="row gx-6" id="row03">
+                    <div class="col" id="row03_col01">
+                      <div class="col-sm "id="row02_col01">
+
+                        <div class="accordion" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Software MPLAB X IDE
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <strong>MPLAB‍ X Integrated Development Environment (IDE)</strong>  es un programa de software expandible y altamente configurable que incorpora potentes herramientas para ayudarle a descubrir, configurar, desarrollar, depurar y calificar diseños integrados para la mayoría de nuestros microcontroladores y controladores de señal digital. MPLAB X IDE funciona perfectamente con el ecosistema de desarrollo MPLAB de software y herramientas, muchas de las cuales son completamente gratuitas. 
+                              
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Microchip Studio para AVR® y SAM Dispositivos
+                              </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <strong>Microchip Studio</strong>  es un entorno de desarrollo integrado (IDE) para desarrollar y depurar aplicaciones de microcontroladores AVR y SAM. Combina todas las grandes características y funcionalidad de Atmel Studio en la cartera de herramientas de desarrollo bien soportada de Microchip para darle un entorno transparente y fácil de usar para escribir, construir y depurar sus aplicaciones escritas en C/ C + o código de ensamblaje. Microchip Studio también puede importar sus bocetos de Arduino I como proyectos de C++ para proporcionarle una ruta de transición sencilla desde makerspace al mercado. 
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                MicroPython IDE
+                              </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <strong>MicroPython</strong>  es una implementación eficiente del lenguaje de programación Python 3 que incluye un pequeño subconjunto de la biblioteca estándar de Python y está optimizado para ejecutarse en microcontroladores y en entornos restringidos.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+  
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <footer id="abt_us">
+        <div id="abt_logo">
+            <img src="image/logo3.png">
+            <a target="_blank" >www.worldofpic.edu.ar</a> 
+        </div>
+        
+    </footer>
+<script src='unidad8.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
